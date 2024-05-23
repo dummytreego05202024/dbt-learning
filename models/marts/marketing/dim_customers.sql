@@ -34,4 +34,4 @@ final as (
 
 )
 
-select * from final
+select *, 'add new tset filed' as test_field from final
