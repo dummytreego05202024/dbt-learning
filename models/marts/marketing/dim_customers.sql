@@ -4,7 +4,7 @@ from {{ ref('stg_jaffle_shop__customers') }}
 ),
 
 orders as (
-    select * from {{ ref('fct_orders')}}
+    select * from {{ ref('fct_orders')}} ---- test ci job
 ),
 
 customer_orders as (
