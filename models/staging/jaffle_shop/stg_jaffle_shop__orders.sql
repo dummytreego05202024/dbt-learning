@@ -1,4 +1,4 @@
-select {{ target.name }} as environment,
+select '{{ target.name }}' as environment,
     id as order_id,
     user_id as customer_id,
     order_date,
