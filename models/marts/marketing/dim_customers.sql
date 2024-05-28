@@ -4,7 +4,7 @@ from {{ ref('stg_jaffle_shop__customers') }}
 ),
 
 orders as (
-    select * from {{ ref('fct_orders')}}
+    select * from {{ ref('fct_orders')}} ---- test ci job
 ),
 
 customer_orders as (
@@ -34,4 +34,4 @@ final as (
 
 )
 
-select * from final
+select *, 'add new tset filed' as test_field from final
