@@ -5,4 +5,4 @@ select {{ target.name }} as environment,
     status
 
 from {{ source('jaffle_shop', 'orders') }}
-where {{ limit_dev_days('order_date', -6000) }}
+---- where {{ limit_dev_days('order_date', -6000) }}
